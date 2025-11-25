@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Extension Setup</title>
+    <style>
+        :root {
+            --bg-color: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #4dabf7;
+            --success-color: #4caf50;
+            --card-bg: #2d2d2d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(77, 171, 247, 0.3);
+        }
+
+        .btn-success {
+            background-color: var(--success-color);
+        }
+
+        .btn-success:hover {
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+
+        .status-section {
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-text {
+            font-weight: 500;
+        }
+
+        .installed {
+            color: var(--success-color);
+        }
+
+        .installed .status-indicator {
+            background-color: var(--success-color);
+            box-shadow: 0 0 8px var(--success-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Antigravity Setup</h1>
+
+        <!-- Status Section: Fixed to Installed -->
+        <div class="status-section">
+            <div class="installed">
+                <span class="status-indicator"></span>
+                <span class="status-text">Extension installed</span>
+            </div>
+        </div>
+
+        <p style="margin-bottom: 2rem; color: #aaa;">System ready.</p>
+
+        <!-- Action Button: Open Project Preview -->
+        <a href="index.html" class="btn btn-success">
+            Open Project Preview
+        </a>
+    </div>
+
+</body>
+
+</html>
